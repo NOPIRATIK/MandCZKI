@@ -5,6 +5,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\SubstCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\SubstCipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\ShiftCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\ShiftCipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +38,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubstCipher.cpp",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp",
+              "RelativeDocumentMoniker": "lab1\\SubstCipher.cpp",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp",
+              "RelativeToolTip": "lab1\\SubstCipher.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-14T19:29:55.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubstCipher.h",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.h",
+              "RelativeDocumentMoniker": "lab1\\SubstCipher.h",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.h",
+              "RelativeToolTip": "lab1\\SubstCipher.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-14T19:29:29.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShiftCipher.cpp",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.cpp",
+              "RelativeDocumentMoniker": "lab1\\ShiftCipher.cpp",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.cpp",
+              "RelativeToolTip": "lab1\\ShiftCipher.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-14T19:28:47.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShiftCipher.h",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.h",
+              "RelativeDocumentMoniker": "lab1\\ShiftCipher.h",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\ShiftCipher.h",
+              "RelativeToolTip": "lab1\\ShiftCipher.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-14T19:28:18.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "utils.cpp",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.cpp",
+              "RelativeDocumentMoniker": "lab1\\utils.cpp",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.cpp",
+              "RelativeToolTip": "lab1\\utils.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-14T19:27:43.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "utils.h",
+              "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.h",
+              "RelativeDocumentMoniker": "lab1\\utils.h",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.h",
+              "RelativeToolTip": "lab1\\utils.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-14T19:27:05.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,10 +126,14 @@
               "RelativeDocumentMoniker": "lab1\\lab1.cpp",
               "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp*",
               "RelativeToolTip": "lab1\\lab1.cpp*",
-              "ViewState": "AgIAANkAAAAAAAAAAAAwwAEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAC8AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-14T17:32:52.024Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
