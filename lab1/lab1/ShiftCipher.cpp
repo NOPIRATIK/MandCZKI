@@ -1,21 +1,20 @@
-#include "ShiftCipher.h"
+﻿#include "ShiftCipher.h"
 #include "Utils.h"
 
 std::string EncryptShift(const std::string& text, const std::string& alphabet, int shift) {
     std::string result = "";
-    int N = static_cast<int>(alphabet.length());
-    if (N == 0) return text;
+    int n = static_cast<int>(alphabet.length());
+    if (n == 0) return text;
 
-    shift = (shift % N + N) % N; // Normalize negative shifts
-
-    for (char symbol : text) {
-        int index = findIndex(symbol, alphabet);
-        if (index != -1) {
-            int new_index = (index + shift) % N;
-            result += alphabet[new_index];
+    for (char c : text) {
+        int idx = findIndex(c, alphabet);
+        if (idx != -1) {
+            int newIdx = (idx + shift) % n;
+            if (newIdx < 0) newIdx += n;
+            result += alphabet[newIdx];
         }
         else {
-            result += symbol; // Leave non-alphabet characters unchanged
+            result += c;
         }
     }
     return result;

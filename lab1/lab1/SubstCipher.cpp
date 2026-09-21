@@ -1,53 +1,45 @@
-#include "SubstCipher.h"
+Ôªø#include "SubstCipher.h"
 #include "Utils.h"
-#include <iostream>
-#include <fstream>
 #include <algorithm>
 #include <random>
 #include <ctime>
+#include <fstream>
+#include <iostream>
 
-std::string GetSubstitutionTable(const std::string& alphabet, const std::string& userKeyInput, const std::string& filename) {
-    // 1. Check if the user provided a key string or a key file path
-    if (!userKeyInput.empty()) {
-        std::ifstream userFile(userKeyInput);
-        if (userFile.is_open()) {
-            std::string fileKey;
-            std::getline(userFile, fileKey);
-            userFile.close();
-            if (fileKey.length() == alphabet.length()) {
-                std::cout << "[»ÌÙÓ] «‡„ÛÊÂÌ‡ Ú‡·ÎËˆ‡ Á‡ÏÂÌ ËÁ Ù‡ÈÎ‡: " << userKeyInput << std::endl;
-                return fileKey;
-            }
+std::string GetSubstitutionTable(const std::string& alphabet, const std::string& keyInput) {
+    // 1. –ï—Å–ª–∏ –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—å —Å–∞–º –≤–≤—ë–ª —Å—Ç—Ä–æ–∫—É-–∫–ª—é—á –Ω—É–∂–Ω–æ–π –¥–ª–∏–Ω—ã
+    if (!keyInput.empty() && keyInput.length() == alphabet.length()) {
+        std::ofstream outFile("keytable.txt");
+        if (outFile.is_open()) {
+            outFile << keyInput;
+            outFile.close();
         }
-        if (userKeyInput.length() == alphabet.length()) {
-            std::cout << "[»ÌÙÓ] »ÒÔÓÎ¸ÁÓ‚‡Ì‡ Ú‡·ÎËˆ‡ Á‡ÏÂÌ ÓÚ ÔÓÎ¸ÁÓ‚‡ÚÂÎˇ." << std::endl;
-            return userKeyInput;
-        }
+        return keyInput;
     }
 
-    // 2. Read from an existing default file
-    std::ifstream inFile(filename);
+    // 2. –ï—Å–ª–∏ –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—å –≤–≤—ë–ª –∏–º—è —Ñ–∞–π–ª–∞ (–Ω–∞–ø—Ä–∏–º–µ—Ä, keytable.txt) ‚Äî –ø—Ä–æ–±—É–µ–º –ø—Ä–æ—á–∏—Ç–∞—Ç—å –∏–∑ –Ω–µ–≥–æ
+    std::ifstream inFile(keyInput.empty() ? "keytable.txt" : keyInput);
     if (inFile.is_open()) {
-        std::string savedKey;
-        std::getline(inFile, savedKey);
+        std::string loadedKey;
+        std::getline(inFile, loadedKey);
         inFile.close();
-        if (savedKey.length() == alphabet.length()) {
-            std::cout << "[»ÌÙÓ] «‡„ÛÊÂÌ‡ Ú‡·ÎËˆ‡ Á‡ÏÂÌ ËÁ Ù‡ÈÎ‡: " << filename << std::endl;
-            return savedKey;
+        if (loadedKey.length() == alphabet.length()) {
+            std::cout << "[–ò–Ω—Ñ–æ] –ö–ª—é—á —É—Å–ø–µ—à–Ω–æ –∑–∞–≥—Ä—É–∂–µ–Ω –∏–∑ —Ñ–∞–π–ª–∞!\n";
+            return loadedKey;
         }
     }
 
-    // 3. Generate a new key table and save it to a file
-    std::cout << "[»ÌÙÓ] “‡·ÎËˆ‡ Á‡ÏÂÌ ÌÂ Ì‡È‰ÂÌ‡. √ÂÌÂ‡ˆËˇ ÌÓ‚ÓÈ..." << std::endl;
+    // 3. –ï—Å–ª–∏ —Ñ–∞–π–ª–∞ –Ω–µ—Ç –∏–ª–∏ –∫–ª—é—á –Ω–µ –ø–æ–¥–æ—à—ë–ª ‚Äî –≥–µ–Ω–µ—Ä–∏—Ä—É–µ–º –Ω–æ–≤—ã–π —Å–ª—É—á–∞–π–Ω—ã–π –∫–ª—é—á
     std::string keyTable = alphabet;
-    std::mt19937 rng(static_cast<unsigned int>(std::time(nullptr)));
+    static std::mt19937 rng(static_cast<unsigned int>(std::time(nullptr)));
     std::shuffle(keyTable.begin(), keyTable.end(), rng);
 
-    std::ofstream outFile(filename);
+    // –°–æ—Ö—Ä–∞–Ω—è–µ–º —Å–≥–µ–Ω–µ—Ä–∏—Ä–æ–≤–∞–Ω–Ω—ã–π –∫–ª—é—á –≤ —Ñ–∞–π–ª keytable.txt
+    std::ofstream outFile("keytable.txt");
     if (outFile.is_open()) {
-        outFile << keyTable; // Save the shuffled alphabet string to the text file
+        outFile << keyTable;
         outFile.close();
-        std::cout << "[”ÒÔÂı] ÕÓ‚‡ˇ Ú‡·ÎËˆ‡ Á‡ÏÂÌ ÒÓı‡ÌÂÌ‡ ‚ Ù‡ÈÎ: " << filename << std::endl;
+        std::cout << "[–ò–Ω—Ñ–æ] –ù–æ–≤—ã–π –∫–ª—é—á —Å–≥–µ–Ω–µ—Ä–∏—Ä–æ–≤–∞–Ω –∏ —Å–æ—Ö—Ä–∞–Ω—ë–Ω –≤ —Ñ–∞–π–ª 'keytable.txt'\n";
     }
 
     return keyTable;
@@ -55,13 +47,13 @@ std::string GetSubstitutionTable(const std::string& alphabet, const std::string&
 
 std::string EncryptSubst(const std::string& text, const std::string& alphabet, const std::string& keyTable) {
     std::string result = "";
-    for (char symbol : text) {
-        int pos = findIndex(symbol, alphabet);
-        if (pos != -1) {
-            result += keyTable[pos];
+    for (char c : text) {
+        int idx = findIndex(c, alphabet);
+        if (idx != -1 && idx < static_cast<int>(keyTable.length())) {
+            result += keyTable[idx];
         }
         else {
-            result += symbol;
+            result += c;
         }
     }
     return result;
@@ -69,13 +61,13 @@ std::string EncryptSubst(const std::string& text, const std::string& alphabet, c
 
 std::string DecryptSubst(const std::string& text, const std::string& alphabet, const std::string& keyTable) {
     std::string result = "";
-    for (char symbol : text) {
-        int pos = findIndex(symbol, keyTable);
-        if (pos != -1) {
-            result += alphabet[pos];
+    for (char c : text) {
+        int idx = findIndex(c, keyTable);
+        if (idx != -1 && idx < static_cast<int>(alphabet.length())) {
+            result += alphabet[idx];
         }
         else {
-            result += symbol;
+            result += c;
         }
     }
     return result;
