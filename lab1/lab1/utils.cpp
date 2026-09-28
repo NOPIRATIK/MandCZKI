@@ -1,4 +1,4 @@
-﻿#include "Utils.h"
+﻿#include "utils.h"
 #include <regex>
 #include <iostream>
 #include <string>
@@ -67,7 +67,7 @@ std::string BuildAlphabetFromRegex(const std::string& defaultAlphabet, const std
         }
     }
     catch (const std::regex_error&) {
-        std::cout << "\n[Error] Invalid regex syntax! Defaulting to full alphabet.\n";
+        std::cout << "\n[Error] Неправильная синтаксис regex\n";
         return "";
     }
 

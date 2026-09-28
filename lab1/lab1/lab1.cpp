@@ -1,4 +1,4 @@
-п»ї#include <iostream>
+#include <iostream>
 #include <string>
 #include <cstdlib>
 #include "ShiftCipher.h"
@@ -10,23 +10,17 @@ int main() {
     system("chcp 1251 > nul");
 #endif
 
-    std::string default_alphabet = "Р°Р±РІРіРґРµС‘Р¶Р·РёР№РєР»РјРЅРѕРїСЂСЃС‚СѓС„С…С†С‡С€С‰СЉС‹СЊСЌСЋСЏ0123456789 .,!?";
-
-    int cipher_type = 0;
-    std::string alphabet;
-    std::string mode;
-    std::string text;
-    int shift = 0;
-    std::string userKeyInput = "";
+    std::string default_alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789 .,!?";
 
     while (true) {
+        int cipher_type = 0;
         std::cout << "\n==========================================" << std::endl;
-        std::cout << "=== Р›РђР‘РћР РђРўРћР РќРђРЇ Р РђР‘РћРўРђ: РЁРР¤Р Р« ===" << std::endl;
-        std::cout << "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ:" << std::endl;
-        std::cout << " 1. РЁРёС„СЂ РїРѕРґСЃС‚Р°РЅРѕРІРєРё (СЃРґРІРёРі)" << std::endl;
-        std::cout << " 2. РЁРёС„СЂ Р·Р°РјРµРЅС‹ (С‚Р°Р±Р»РёС†Р°)" << std::endl;
-        std::cout << " 0. Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹" << std::endl;
-        std::cout << "Р’Р°С€ РІС‹Р±РѕСЂ: ";
+        std::cout << "=== ЛАБОРАТОРНАЯ РАБОТА: ШИФРЫ ===" << std::endl;
+        std::cout << "Выберите действие:" << std::endl;
+        std::cout << " 1. Шифр подстановки (сдвиг)" << std::endl;
+        std::cout << " 2. Шифр замены (таблица)" << std::endl;
+        std::cout << " 0. Выход из программы" << std::endl;
+        std::cout << "Ваш выбор: ";
 
         if (!(std::cin >> cipher_type)) {
             std::cin.clear();
@@ -35,24 +29,27 @@ int main() {
         }
 
         if (cipher_type == 0) {
-            std::cout << "\nР—Р°РІРµСЂС€РµРЅРёРµ СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹..." << std::endl;
+            std::cout << "\nЗавершение работы программы..." << std::endl;
             break;
         }
 
         if (cipher_type != 1 && cipher_type != 2) {
-            std::cout << "РќРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ! РџРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°." << std::endl;
+            std::cout << "Неверный выбор! Попробуйте снова." << std::endl;
             continue;
         }
 
         std::cin.ignore();
 
-        std::cout << "\nРЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№ Р°Р»С„Р°РІРёС‚:\n " << default_alphabet << std::endl;
-        std::cout << "1. Р’РІРµРґРёС‚Рµ Regex РґРёР°РїР°Р·РѕРЅ (РЅР°РїСЂРёРјРµСЂ: [Р°-Рі], [Р°-СЏ0-9], [0-9], С‡С‚РѕР±С‹ РІРєР»СЋС‡РёС‚СЊ С‘ С‹ РґРёР°РїРѕР·РѕРЅ [Р°-СЏС‘])\n";
-        std::cout << "   (Enter вЂ” РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІРµСЃСЊ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ Р°Р»С„Р°РІРёС‚):\n> ";
+        // ---------- Выбор алфавита ----------
+        std::cout << "\nСтандартный алфавит:\n " << default_alphabet << std::endl;
+        std::cout << "1. Введите Regex диапазон (например: [а-г], [а-я0-9], [0-9])\n";
+        std::cout << "   (учтите: [а-я] не включает 'ё', для включения используйте [а-яё])\n";
+        std::cout << "   (Enter — использовать весь стандартный алфавит):\n> ";
 
         std::string userPattern;
         std::getline(std::cin, userPattern);
 
+        std::string alphabet;
         if (userPattern.empty()) {
             alphabet = default_alphabet;
         }
@@ -63,47 +60,91 @@ int main() {
             }
         }
 
-        std::cout << "РЎС„РѕСЂРјРёСЂРѕРІР°РЅРЅС‹Р№ Р°Р»С„Р°РІРёС‚ (" << alphabet.length() << " СЃРёРјРІРѕР»РѕРІ): " << alphabet << std::endl;
+        std::cout << "Сформированный алфавит (" << alphabet.length()
+            << " символов): " << alphabet << std::endl;
 
-        std::cout << "\n2. Р’С‹Р±РµСЂРёС‚Рµ СЂРµР¶РёРј (1 - РЁРёС„СЂРѕРІР°РЅРёРµ, 2 - Р Р°СЃС€РёС„СЂРѕРІР°РЅРёРµ): ";
-        int mode_choice;
+        // ---------- Режим ----------
+        std::cout << "\n2. Выберите режим (1 - Шифрование, 2 - Расшифрование): ";
+        int mode_choice = 0;
         std::cin >> mode_choice;
-        mode = (mode_choice == 1) ? "enc" : "dec";
+        std::cin.ignore();
+
+        // ---------- Параметры шифра ----------
+        int shift = 0;
+        std::string userKeyInput;
 
         if (cipher_type == 1) {
-            std::cout << "3. Р’РІРµРґРёС‚Рµ РІРµР»РёС‡РёРЅСѓ СЃРґРІРёРіР° (K): ";
+            std::cout << "3. Введите величину сдвига (K): ";
             std::cin >> shift;
             std::cin.ignore();
         }
         else {
+            std::cout << "\n3. Таблица замен:\n"
+                << "   1. Загрузить из указанного файла\n"
+                << "   2. Сгенерировать новую случайную таблицу\n"
+                << "   3. Ввести строку-ключ вручную\n"
+                << "Ваш выбор: ";
+
+            int keyChoice = 0;
+            if (!(std::cin >> keyChoice)) {
+                std::cin.clear();
+                std::cin.ignore(10000, '\n');
+                keyChoice = 2;
+            }
             std::cin.ignore();
-            std::cout << "3. Р’РІРµРґРёС‚Рµ С‚Р°Р±Р»РёС†Сѓ Р·Р°РјРµРЅ (Enter вЂ” СЃРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ СЃР»СѓС‡Р°Р№РЅСѓСЋ): ";
-            std::getline(std::cin, userKeyInput);
+
+            switch (keyChoice) {
+            case 1:
+                std::cout << "Введите имя файла с таблицей замен: ";
+                std::getline(std::cin, userKeyInput);
+                break;
+
+            case 2:
+                userKeyInput = "__GENERATE__";
+                break;
+
+            case 3:
+                std::cout << "Введите строку-ключ (длиной как алфавит): ";
+                std::getline(std::cin, userKeyInput);
+                break;
+
+            default:
+                std::cout << "Неверный выбор. Будет сгенерирована новая таблица.\n";
+                userKeyInput = "__GENERATE__";
+                break;
+            }
         }
 
-        std::cout << "4. Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё: ";
+        // ---------- Текст ----------
+        std::cout << "4. Введите текст для обработки: ";
+        std::string text;
         std::getline(std::cin, text);
 
-        std::cout << "\n--- Р Р•Р—РЈР›Р¬РўРђРў ---" << std::endl;
-        std::cout << "РњРѕС‰РЅРѕСЃС‚СЊ Р°Р»С„Р°РІРёС‚Р° (N): " << alphabet.length() << std::endl;
+        // ---------- Результат ----------
+        std::cout << "\n--- РЕЗУЛЬТАТ ---" << std::endl;
+        std::cout << "Мощность алфавита (N): " << alphabet.length() << std::endl;
 
         if (cipher_type == 1) {
-            if (mode == "enc" || mode == "1") {
-                std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ (С€РёС„СЂРѕРІР°РЅРёРµ СЃРґРІРёРіРѕРј): " << EncryptShift(text, alphabet, shift) << std::endl;
+            if (mode_choice == 1) {
+                std::cout << "Результат (шифрование сдвигом): "
+                    << EncryptShift(text, alphabet, shift) << std::endl;
             }
             else {
-                std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ (СЂР°СЃС€РёС„СЂРѕРІР°РЅРёРµ СЃРґРІРёРіРѕРј): " << DecryptShift(text, alphabet, shift) << std::endl;
+                std::cout << "Результат (расшифрование сдвигом): "
+                    << DecryptShift(text, alphabet, shift) << std::endl;
             }
         }
-        else if (cipher_type == 2) {
+        else {
             std::string keyTable = GetSubstitutionTable(alphabet, userKeyInput);
-            std::cout << "РўР°Р±Р»РёС†Р° Р·Р°РјРµРЅ: " << keyTable << std::endl;
+            std::cout << "Таблица замен: " << keyTable << std::endl;
 
-            if (mode == "enc" || mode == "1") {
-                std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ (С€РёС„СЂРѕРІР°РЅРёРµ Р·Р°РјРµРЅРѕР№): " << EncryptSubst(text, alphabet, keyTable) << std::endl;
+            if (mode_choice == 1) {
+                std::cout << "Результат (шифрование заменой): "
+                    << EncryptSubst(text, alphabet, keyTable) << std::endl;
             }
             else {
-                std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ (СЂР°СЃС€РёС„СЂРѕРІР°РЅРёРµ Р·Р°РјРµРЅРѕР№): " << DecryptSubst(text, alphabet, keyTable) << std::endl;
+                std::cout << "Результат (расшифрование заменой): "
+                    << DecryptSubst(text, alphabet, keyTable) << std::endl;
             }
         }
     }

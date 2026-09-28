@@ -1,5 +1,5 @@
 ﻿#include "ShiftCipher.h"
-#include "Utils.h"
+#include "utils.h"
 
 std::string EncryptShift(const std::string& text, const std::string& alphabet, int shift) {
     std::string result = "";
