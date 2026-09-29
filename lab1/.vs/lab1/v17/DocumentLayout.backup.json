@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\SubstCipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|solutionrelative:lab1\\lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76B75832-244F-4616-87F3-EC440FFB5C39}|lab1\\lab1.vcxproj|C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SubstCipher.cpp",
               "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp",
               "RelativeDocumentMoniker": "lab1\\SubstCipher.cpp",
-              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp*",
-              "RelativeToolTip": "lab1\\SubstCipher.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\SubstCipher.cpp",
+              "RelativeToolTip": "lab1\\SubstCipher.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-14T19:29:55.944Z",
               "EditorCaption": ""
@@ -97,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "utils.cpp",
               "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\utils.cpp",
               "RelativeDocumentMoniker": "lab1\\utils.cpp",
@@ -123,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "lab1.cpp",
               "DocumentMoniker": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp",
               "RelativeDocumentMoniker": "lab1\\lab1.cpp",
               "ToolTip": "C:\\\u041E\u0420\u0410\u041B\u042C\u041D\u042B\u0415_\u0423\u0422\u0415\u0425\u0418\\3_\u043A\u0443\u0440\u0441_1_\u0441\u0435\u043C\u0435\u0441\u0442\u0440\\MandCZKI\\lab1\\lab1\\lab1.cpp",
               "RelativeToolTip": "lab1\\lab1.cpp",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAAAJgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAJgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-14T17:32:52.024Z",
               "EditorCaption": ""
