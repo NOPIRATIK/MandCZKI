@@ -2,27 +2,23 @@
 #include <vector>
 #include <cmath>
 
-inline long long sieveOfEratosthenes(long long limit) {
-    if (limit < 2){
-        return 0;
-    }
+inline bool isPrimeBySieve(long long number) {
+    if (number < 2) return false;
+    if (number == 2) return true;
+    if (number % 2 == 0) return false;
 
-    std::vector<bool> isPrime(limit + 1, true);
+    std::vector<bool> isPrime(number + 1, true);
     isPrime[0] = isPrime[1] = false;
 
-    for (long long p = 2; p * p <= limit; ++p) {
+    for (long long p = 3; p * p <= number; p += 2) {
         if (isPrime[p]) {
-            for (long long i = p * p; i <= limit; i += p) {
+            for (long long i = p * p; i <= number; i += p) {
                 isPrime[i] = false;
             }
         }
     }
 
-    long long count = 0;
-    for (long long i = 2; i <= limit; ++i) {
-        if (isPrime[i]) count++;
-    }
-    return count;
+    return isPrime[number];
 }
 
 inline bool isPerfectNumber(long long n, long long& outSum) {

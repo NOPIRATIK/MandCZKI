@@ -45,23 +45,36 @@ void handleFermatFactorization() {
 }
 
 void handleSieve() {
-    long long limit;
-    std::cout << "\n--- Пункт 3: Решето Эратосфена ---\n";
-    std::cout << "Введите предел N: ";
-    if (!(std::cin >> limit) || limit < 2) {
+    long long number;
+    std::cout << "\n--- Пункт 3: Проверка числа на простоту ---\n";
+    std::cout << "Введите число N: ";
+
+    if (!(std::cin >> number)) {
         std::cout << "Ошибка ввода.\n\n";
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
         return;
     }
 
-    long long count = count = sieveOfEratosthenes(limit);
     auto start = std::chrono::high_resolution_clock::now();
-    sieveOfEratosthenes(limit);
-    auto duration = std::chrono::duration<double, std::milli>(
-        std::chrono::high_resolution_clock::now() - start
-    ).count();
+    bool prime = isPrimeBySieve(number);
+    auto end = std::chrono::high_resolution_clock::now();
 
-    std::cout << "Найдено простых: " << count
-        << "\nВремя: " << std::fixed << std::setprecision(3) << duration << " мс\n\n";
+    double duration = std::chrono::duration<double, std::milli>(end - start).count();
+
+    if (number < 2) {
+        std::cout << "Число " << number
+            << " не является простым (простые начинаются с 2).\n";
+    }
+    else if (prime) {
+        std::cout << "Число " << number << " — простое.\n";
+    }
+    else {
+        std::cout << "Число " << number << " — составное.\n";
+    }
+
+    std::cout << "Время: " << std::fixed << std::setprecision(3)
+        << duration << " мс\n\n";
 }
 
 void handlePerfectNumber() {
